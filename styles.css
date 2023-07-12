@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.sideboard {
+  background-color: aqua;
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+
+.header {
+  background-color: blueviolet;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.board {
+  background-color: chartreuse;
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+}
