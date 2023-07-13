@@ -115,6 +115,11 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
+    }
+
+    .search .top-icon {
+      margin-right: 0.5rem;
     }
 
     .search input {
@@ -131,19 +136,25 @@
       display: flex;
       width: 100%;
       justify-content: space-evenly;
+      align-items: center;
 
       font-size: 1.2rem;
       font-weight: bold;
     }
+    
+    .top-icon {
+      height: 1.5rem;
+      width: auto;
+    }
+  
+    .profile-mini {
+      height: 3rem;
+      width: auto;
+    }
+  }
+  
   }
 
-  .top-navigation img {
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-right: 0.5rem;
-    vertical-align: middle;
-  }
-}
 
 /* === BOARD === */
 
