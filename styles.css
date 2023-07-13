@@ -18,94 +18,137 @@
 /* === SIDEBAR === */
 
 .sidebar {
-  background-color: aqua;
+  background-color: rgb(4, 205, 255);
   grid-column: 1 / 2;
   grid-row: 1 / 5;
   
   display: grid;
   grid-template-rows: 1fr 5fr;
-}
 
-.sidebar-navigation {
-  font-size: 1.5rem;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  place-content: start;
-  gap: 2rem;
-}
-
-ul {
-  padding-left: 1rem;
-}
-
-li {
-  list-style: none;
-  margin: 0.5rem 0
-}
-
-.sidebar-navigation li::before {
-  content: "";
-  display: inline-block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  vertical-align: middle;
-  margin-right: 1rem;
-  margin-bottom: 0.3rem;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-/* LIST ITEM ICONS */
-.sidebar-navigation {
-  .profile-icon li:nth-of-type(1)::before {
-    background-image: url(icons/home-account.svg);
+  .sidebar-navigation ul {
+    padding-left: 1rem;
   }
 
-  .profile-icon li:nth-of-type(2)::before {
-    background-image: url(icons/account-circle.svg);
+  .sidebar-navigation li {
+    list-style: none;
+    margin: 0.5rem 0
   }
 
-  .profile-icon li:nth-of-type(3)::before {
-    background-image: url(icons/message.svg);
+  .sidebar-navigation li::before {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    margin-right: 1rem;
+    margin-bottom: 0.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
-  .profile-icon li:nth-of-type(4)::before {
-    background-image: url(icons/history.svg);
-  }
-
-  .profile-icon li:nth-of-type(5)::before {
-    background-image: url(icons/card-bulleted.svg);
-  }
-
-  .profile-icon li:nth-of-type(6)::before {
-    background-image: url(icons/account-group.svg);
-  }
+  .sidebar-navigation {
+    font-size: 1.5rem;
   
-  .settings-icon li:nth-of-type(1)::before {
-    background-image: url(icons/cogs.svg);
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: start;
+    gap: 2rem;
   
-  .settings-icon li:nth-of-type(2)::before {
-    background-image: url(icons/face-agent.svg);
-  }
+    /* LIST ITEM ICONS */
   
-  .settings-icon li:nth-of-type(3)::before {
-    background-image: url(icons/home-lock.svg);
+    .profile-icon li:nth-of-type(1)::before {
+      background-image: url(icons/home-account.svg);
+    }
+  
+    .profile-icon li:nth-of-type(2)::before {
+      background-image: url(icons/account-circle.svg);
+    }
+  
+    .profile-icon li:nth-of-type(3)::before {
+      background-image: url(icons/message.svg);
+    }
+  
+    .profile-icon li:nth-of-type(4)::before {
+      background-image: url(icons/history.svg);
+    }
+  
+    .profile-icon li:nth-of-type(5)::before {
+      background-image: url(icons/card-bulleted.svg);
+    }
+  
+    .profile-icon li:nth-of-type(6)::before {
+      background-image: url(icons/account-group.svg);
+    }
+    
+    .settings-icon li:nth-of-type(1)::before {
+      background-image: url(icons/cogs.svg);
+    }
+    
+    .settings-icon li:nth-of-type(2)::before {
+      background-image: url(icons/face-agent.svg);
+    }
+    
+    .settings-icon li:nth-of-type(3)::before {
+      background-image: url(icons/home-lock.svg);
+    }
   }
 }
 
 /* === HEADER === */
 
 .header {
-  background-color: blueviolet;
+  background-color: rgb(255, 255, 255);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+
+  .top-navigation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-content: center;
+    place-items: center;
+
+    .search {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search input {
+      width: 80%;
+      padding: 0 0.7rem;
+      font-size: 1rem;
+
+      border: 0;
+      border-radius: 1rem;
+      background-color: rgb(228, 228, 228);
+    }
+
+    .profile-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .top-navigation img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
 }
 
+/* === BOARD === */
+
 .board {
-  background-color: chartreuse;
+  background-color: rgb(228, 228, 228);
   grid-column: 2 / 3;
   grid-row: 2 / 5;
 }
