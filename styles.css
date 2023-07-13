@@ -57,40 +57,43 @@ li {
   width: 1.5rem;
 }
 
-.profile-icon li:nth-of-type(1)::before {
-  background-image: url(icons/home-account.svg);
-}
+/* LIST ITEM ICONS */
+.sidebar-navigation {
+  .profile-icon li:nth-of-type(1)::before {
+    background-image: url(icons/home-account.svg);
+  }
 
-.profile-icon li:nth-of-type(2)::before {
-  background-image: url(icons/account-circle.svg);
-}
+  .profile-icon li:nth-of-type(2)::before {
+    background-image: url(icons/account-circle.svg);
+  }
 
-.profile-icon li:nth-of-type(3)::before {
-  background-image: url(icons/message.svg);
-}
+  .profile-icon li:nth-of-type(3)::before {
+    background-image: url(icons/message.svg);
+  }
 
-.profile-icon li:nth-of-type(4)::before {
-  background-image: url(icons/history.svg);
-}
+  .profile-icon li:nth-of-type(4)::before {
+    background-image: url(icons/history.svg);
+  }
 
-.profile-icon li:nth-of-type(5)::before {
-  background-image: url(icons/card-bulleted.svg);
-}
+  .profile-icon li:nth-of-type(5)::before {
+    background-image: url(icons/card-bulleted.svg);
+  }
 
-.profile-icon li:nth-of-type(6)::before {
-  background-image: url(icons/account-group.svg);
-}
-
-.settings-icon li:nth-of-type(1)::before {
-  background-image: url(icons/cogs.svg);
-}
-
-.settings-icon li:nth-of-type(2)::before {
-  background-image: url(icons/face-agent.svg);
-}
-
-.settings-icon li:nth-of-type(3)::before {
-  background-image: url(icons/home-lock.svg);
+  .profile-icon li:nth-of-type(6)::before {
+    background-image: url(icons/account-group.svg);
+  }
+  
+  .settings-icon li:nth-of-type(1)::before {
+    background-image: url(icons/cogs.svg);
+  }
+  
+  .settings-icon li:nth-of-type(2)::before {
+    background-image: url(icons/face-agent.svg);
+  }
+  
+  .settings-icon li:nth-of-type(3)::before {
+    background-image: url(icons/home-lock.svg);
+  }
 }
 
 /* === HEADER === */
